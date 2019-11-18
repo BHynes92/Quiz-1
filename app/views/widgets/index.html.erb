@@ -1,0 +1,12 @@
+<h1 class="col-10 offset-1">This is the index page for my "Widgets"</h1>
+<br />
+<%= link_to 'Create a New Widget', new_widget_path, class: 'btn btn-primary offset-1' %>
+<br /><br />
+<%= @widgets.each do |widget| %>
+  <div class="col-10 offset-1">
+    <h2><%= widget.title%></h2><br />
+    <i><%= widget.message %></i><br /><br />
+  </div>
+
+  <hr />
+<% end %>

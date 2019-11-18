@@ -1,0 +1,9 @@
+<div class="col-10 offset-1">
+  <h1>Enter the title and message for your Widget!</h1><br />
+  <%= simple_form_for @widget do |f| %>
+    <%= f.input :title %>
+    <%= f.input :message %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <%end %>
+</div>
